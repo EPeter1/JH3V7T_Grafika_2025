@@ -4,8 +4,16 @@
 
 int main() {
 
-    float matrix_a[3][3] = {{0.5, 2.3, -1.9}, {-1, 2, 3}, {-4.7, 10.1, 0}};
-    float matrix_b[3][3] = {{1, 2, 3}, {-4, 5, -6}, {7, -8, 9}};
+    float matrix_a[3][3] = {
+        {0.5, 2.3, -1.9},
+        {-1, 2, 3},
+        {-4.7, 10.1, 0}
+    };
+    float matrix_b[3][3] = {
+        {1, 2, 3},
+        {-4, 5, -6},
+        {7, -8, 9}
+    };
     float result_matrix[3][3];
 
     add_matrices(matrix_a, matrix_b, result_matrix);

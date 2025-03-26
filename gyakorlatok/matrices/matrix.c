@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-void print_matrix(float matrix[3][3]) {
+void print_matrix(const float matrix[3][3]) {
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -35,7 +35,7 @@ void init_identity_matrix(float matrix[3][3]) {
     }
 }
 
-void add_matrices(float matrix_a[3][3], float matrix_b[3][3], float result_matrix[3][3]) {
+void add_matrices(const float matrix_a[3][3], const float matrix_b[3][3], float result_matrix[3][3]) {
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
@@ -53,7 +53,7 @@ void multiply_matrix_by_scalar(float matrix[3][3], float scalar) {
     }
 }
 
-void multiply_matrices(float matrix_a[3][3], float matrix_b[3][3], float result_matrix[3][3]) {
+void multiply_matrices(const float matrix_a[3][3], const float matrix_b[3][3], float result_matrix[3][3]) {
 
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
